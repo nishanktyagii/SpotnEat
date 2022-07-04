@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpotnEats</title>
+    <style>
+         body{
+            background:url('web.jpg');
+            background-repeat: no-repeat;
+            /* background-size: cover; */
+            /* background-position: center; */
+            color: white;
+            border-radius: 5px;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            /* flex-wrap: wrap;
+            /* align-content: center; */
+        } 
+        .navigation{
+            display: inline-block;
+            
+        }
+        .navigation li{
+            display: inline-block;
+            margin: 35px 25px;
+            margin: 15px 20px;
+            position: sticky;
+        }
+        .navigation li a{
+            color: rgb(244, 245, 238);
+            font-size: 25px;
+            text-decoration: none;
+           
+        }
+        .navigation li a:hover{
+        color: rgb(236, 100, 16);
+        text-decoration: underline;
+       
+        }
+        .img{
+        display: inline-block;
+           width: 200px;
+           margin: 50px 70px;
+           /* position: fixed; */
+           /* background-color: #76a0ca; */
+        }
+        .left img{
+            width: 166px;
+            height: 39px;
+            /* opacity: 0.5; */
+        }
+        .mid{
+            margin: -17px 324px;
+            width: 800px;
+            /* border: 3px solid blue; */
+            margin: --79px 244px;
+            /* position: fixed; */
+            /* background-color: #ae9ef1; */
+           
+        }
+        .navigation li{
+            display: inline-block;
+            font-size: 15px;
+            margin: 0px 15px;
+            /* position: sticky; */
+        }
+        .left{
+            margin: 28px 9px;
+            /* border: 3px solid red; */
+            width: 200px;
+            height: 20px;
+        }
+        .hed{
+            margin: 27px 143px;
+            display: inline-block;
+            font-size: 35px;
+            width: 500px;
+        }
+        .new{
+             /* display: inline-block;
+            font-size: 30px; */
+             width: 500px; 
+            margin: -78px 142px; 
+            font-size: 22px;
+    font-family: ' Courier, monospace';
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+        }
+        .container{
+            margin: 80px 40px;
+            padding:20px 24px;
+            width: 305px;
+            height: 500px;
+            border: 4px solid rgb(246, 245, 245);
+            border-radius: 12px;
+            background: white;
+            position: absolute;
+            right: 60px;
+            top: 150px;
+        }
+        .form input{
+            width: 288px;
+            margin: 8px 5px;
+            padding: 10px;
+            font-size: 13px;
+            text-align:left;
+            font-family: 'Open Sans', sans-serif;
+            font-style: normal;
+            border-radius: 4px;
+            border: 1px solid gainsboro;
+            color:  #707272;
+        }
+        .form input:hover{
+            border-color: #0a5eef;
+        }
+        .box{
+            color: rgb(246, 77, 4)
+        }
+        .form-control{
+            padding: 10px;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #747474;
+    border-radius: 5px;
+    width: 290px;
+    margin: 7px 4px;
+
+}
+.btn1{
+    text-align: center;
+            width: 250px;
+            height: 50px;
+            margin: 10px 23px;
+    padding: 3px;
+            
+            border: 3px solid rgb(240, 92, 7);
+            border-radius: 5px;
+            background-color: rgb(246, 77, 4);
+            color: rgb(241, 238, 236);
+            font-size: 18px;
+}
+.btn1:hover{
+    cursor: pointer;
+    /* box-shadow: 5px 5px rgb(178, 91, 59); */
+}
+.btn1:active{
+    background-color: #526f53;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+       .clone{
+            margin: 250px 50px;
+       }
+       .clone1{
+           margin: -190px 40px;
+       }
+       .btn2{
+    text-align: center;
+            width: 250px;
+            height: 40px;
+            margin: -38px 691px;
+    padding: 3px;
+    top: 10px;
+    display:inline-block;
+            right: 10px;
+            border: 3px solid rgb(240, 92, 7);
+            border-radius: 5px;
+            background-color: rgb(246, 77, 4);
+            color: rgb(241, 238, 236);
+            font-size: 18px;
+}
+.btn2:hover{
+    cursor: pointer;
+    /* box-shadow: 5px 5px rgb(218, 104, 63); */
+}
+.btn2:active{
+    background-color: #526f53;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.h3{
+    color:rgb(246, 77, 4);
+    margin: -40px 500px;
+    /* display: inline-block; */
+    position: absolute;
+    /* right: 89px; */
+    top: 1000px;
+    font-size: 22px;
+    width: 700px;
+}
+.h4{
+    color:rgb(103, 98, 98);
+    margin: -40px 500px;
+    /* display: inline-block; */
+    position: absolute;
+    /* right: 89px; */
+    top: 1100px;
+    font-size: 19px;
+    width: 700px;
+    padding: 5px;
+}
+.icon1{
+    position: absolute;
+    right: 780px;
+    top: 1200px;
+    border: 0.5px solid orangered;
+    border-radius: 13px;
+    padding: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+    
+}
+.icon1:hover{
+    /* transform: rotate(350deg); */
+    box-shadow: 5px 5px rgb(228, 98, 50);
+}
+.ic{
+    position: absolute;
+    top: 120px;
+    right: 330px;
+    color: #747474;
+    font-size: 19px;
+    width: 300px;
+    font-family: "Open sans", sans serif;
+}
+.icon2{
+    position: absolute;
+    right: 400px;
+    top: 1200px;
+    border: 0.5px solid orangered;
+    border-radius: 13px;
+    padding: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+    .icon2:hover{
+    /* transform: rotate(350deg); */
+    box-shadow: 5px 5px rgb(228, 98, 50);
+}
+.ic4{
+    position: absolute;
+    right: 80px;
+    top: 1180px;
+    color: #707272;
+    width: 300px;
+    font-family: "Open sans", sans serif;
+    font-size: 19px;
+    font-weight: 400px;
+}
+.ic5{
+    position: absolute;
+    right: 470px;
+    top: 1280px;
+    color: #707272;
+    width: 300px;
+    font-family: "Open sans", sans serif;
+    font-size: 19px;
+    font-weight: 400px;
+}
+.icon3{
+    position: absolute;
+    right: 780px;
+    top: 1300px;
+    border: 0.5px solid orangered;
+    border-radius: 13px;
+    padding: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+    .icon3:hover{
+    /* transform: rotate(350deg); */
+    box-shadow: 5px 5px rgb(228, 98, 50);
+}
+.ic6{
+    position: absolute;
+    right: 80px;
+    top: 1280px;
+    color: #707272;
+    width: 300px;
+    font-family: "Open sans", sans serif;
+    font-size: 19px;
+    font-weight: 400px;
+}
+.icon4{
+    position: absolute;
+    right: 400px;
+    top: 1300px;
+    border: 0.5px solid orangered;
+    border-radius: 13px;
+    padding: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+    .icon4:hover{
+    /* transform: rotate(350deg); */
+    box-shadow: 5px 5px rgb(228, 98, 50);
+}
+.icon5{
+    position: absolute;
+    right: 780px;
+    top: 1400px;
+    border: 0.5px solid orangered;
+    border-radius: 13px;
+    padding: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.icon5:hover{
+    /* transform: rotate(350deg); */
+    box-shadow: 5px 5px rgb(228, 98, 50);
+}
+.ic7{
+    position: absolute;
+    right: 520px;
+    top: 1380px;
+    color: #707272;
+    width: 250px;
+    font-family: "Open sans", sans serif;
+    font-size: 19px;
+    font-weight: 400px;
+}
+.icon6{
+    position: absolute;
+    right: 400px;
+    top: 1400px;
+    border: 0.5px solid orangered;
+    border-radius: 13px;
+    padding: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.icon6:hover{
+    /* transform: rotate(350deg); */
+    box-shadow: 5px 5px rgb(228, 98, 50);
+}
+.ic8{
+    position: absolute;
+    right: 80px;
+    top: 1370px;
+    color: #707272;
+    width: 300px;
+    font-family: "Open sans", sans serif;
+    font-size: 19px;
+    font-weight: 400px;
+}
+.icon7{
+    position: absolute;
+    right: 780px;
+    top: 1500px;
+    border: 0.5px solid orangered;
+    border-radius: 13px;
+    padding: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.icon7:hover{
+    /* transform: rotate(350deg); */
+    box-shadow: 5px 5px rgb(228, 98, 50);
+}
+.ic9{
+    position: absolute;
+    right: 470px;
+    top: 1480px;
+    color: #707272;
+    width: 300px;
+    font-family: "Open sans", sans serif;
+    font-size: 19px;
+    font-weight: 400px;
+}
+.icon8{
+    position: absolute;
+    right: 400px;
+    top: 1500px;
+    border: 0.5px solid orangered;
+    border-radius: 13px;
+    padding: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.icon8:hover{
+    /* transform: rotate(350deg); */
+    box-shadow: 5px 5px rgb(228, 98, 50);
+}
+.ic10{
+    position: absolute;
+    right: 80px;
+    top: 1470px;
+    color: #707272;
+    width: 300px;
+    font-family: "Open sans", sans serif;
+    font-size: 19px;
+    font-weight: 400px;
+}
+.nxt1{
+    font-size: 35px;
+    color: orangered;
+    position: absolute;
+    top: 1650px;
+    right: 400px;
+    font-family: "Open sans", sans serif;
+}
+.nxt2{
+    /* display: inline-block; */
+    display: flex;
+    position: absolute;
+    top: 1730px;
+}
+.navigation1 li{
+    display: inline-block;
+justify-content: center;
+}
+.new1{
+    background: #08327b;
+    position: absolute;
+   top: 2000px;
+    height: 600px;
+    width: 1400px;
+}
+.nw{
+    position: absolute;
+    left: 320px;
+    font-size: 35px;
+    top: 30px;
+}
+.nw2{
+    position: absolute;
+    top: 150px;
+    width: 600px;
+    left: 40px;
+font-family: sans-serif;
+    font-size: 19px;
+    color: #d3c4c4;
+}
+.nw3{
+    position: absolute;
+    top: 130px;
+    width: 580px;
+    right: 60px;
+font-family: sans-serif;
+    font-size: 16px;
+    color: #d3c4c4;
+}
+.btn3{
+    text-align: center;
+            width: 250px;
+            height: 60px;
+            /* margin: -38px 691px; */
+    padding: 3px;
+    position: absolute;
+    top: 300px;
+    /* display:inline-block; */
+            left: 65px;
+            border: 3px solid rgb(240, 92, 7);
+            border-radius: 5px;
+            background-color: rgb(246, 77, 4);
+            color: rgb(241, 238, 236);
+            font-size: 18px;
+}
+.btn3:hover{
+    cursor: pointer;
+    font-size: 19px;
+    /* box-shadow: 5px 5px rgb(227, 139, 107); */
+} 
+.btn3:active{
+    background-color: #526f53;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.n1{
+   
+    height: 2600px;
+    width: 1250px;
+    position: absolute;
+    top: 2600px;
+    left: 30px;
+    
+}
+.ni1{
+    color: orangered;
+    font-size: 35px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+
+}
+.n2{
+    color: #747474;
+    font-size: 20px;
+    position: absolute;
+    top: 80px;
+    left: 10px;
+    text-align: left;
+}
+.ni2{
+    position: absolute;
+    top: 110px;
+}
+.ni3{
+    color: orangered;
+    position: absolute;
+    top: 1850px;
+    left: 30px;
+    font-size: 20px;
+}
+.hz{
+    color: orangered;
+    position: absolute;
+    top: 1880px;
+    left: 65px;
+    font-size: 20px;
+}
+.hh{
+    color: #747474;
+    position: absolute;
+    top: 1910px;
+    left: 65px;
+    font-size: 18px;
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ni4{
+    color: orangered;
+    position: absolute;
+    top: 1850px;
+    left: 500px;
+    font-size: 20px;
+}
+.hz1{
+    color: orangered;
+    position: absolute;
+    top: 1880px;
+    left: 540px;
+    font-size: 20px;
+}
+.hh1{
+    color: #747474;
+    position: absolute;
+    top: 1910px;
+    left: 540px;
+    font-size: 18px;
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ni5{
+    color: orangered;
+    position: absolute;
+    top: 1855px;
+    left: 940px;
+    font-size: 17px;
+}
+.hz2{
+    color: orangered;
+    position: absolute;
+    top: 1880px;
+    left: 980px;
+    font-size: 20px;
+}
+.hh2{
+    color: #747474;
+    position: absolute;
+    top: 1910px;
+    left: 980px;
+    font-size: 18px;
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ni6{
+    color: orangered;
+    position: absolute;
+    top: 2080px;
+    left: 30px;
+    font-size: 15px;
+}
+.hz3{
+    color: orangered;
+    position: absolute;
+    top: 2100px;
+    left: 65px;
+    font-size: 20px;
+}
+.hh3{
+    color: #747474;
+    position: absolute;
+    top: 2130px;
+    left: 65px;
+    font-size: 18px;
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ni7{
+    color: orangered;
+    position: absolute;
+    top: 2080px;
+    left: 500px;
+    font-size: 15px;
+}
+.hz4{
+    color: orangered;
+    position: absolute;
+    top: 2100px;
+    left: 540px;
+    font-size: 20px;
+}
+.hh4{
+    color: #747474;
+    position: absolute;
+    top: 2130px;
+    left: 540px;
+    font-size: 18px;
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ni8{
+    color: orangered;
+    position: absolute;
+    top: 2080px;
+    left: 940px;
+    font-size: 15px;
+}
+.hz5{
+    color: orangered;
+    position: absolute;
+    top: 2080px;
+    left: 980px;
+    font-size: 20px;
+}
+.hh5{
+    color: #747474;
+    position: absolute;
+    top: 2130px;
+    left: 980px;
+    font-size: 18px;
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn4{
+    text-align: center;
+            width: 250px;
+            height: 60px;
+            /* margin: -38px 691px; */
+    padding: 3px;
+    position: absolute;
+    top: 2280px;
+    /* display:inline-block; */
+            left: 565px;
+            border: 3px solid rgb(240, 92, 7);
+            border-radius: 5px;
+            background-color: rgb(246, 77, 4);
+            color: rgb(241, 238, 236);
+            font-size: 18px;
+}
+.btn4:hover{
+    cursor: pointer;
+    font-size: 19px;
+    /* box-shadow: 5px 5px rgb(212, 154, 133); */
+} 
+.btn4:active{
+    background-color: #526f53;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.hk1{
+    color: orangered;
+    position: absolute;
+    top: 2350px;
+    left: 60px;
+    width: 500px;
+    font-size: 35px;
+}
+.hk2{
+    color: rgb(73, 65, 62);
+    position: absolute;
+    top: 2500px;
+    left: 60px;
+    width: 500px;
+    font-size: 20px;
+}
+.hk3{
+    position: absolute;
+    top: 2400px;
+    right: 20px;
+}
+.hk4{
+    color: orangered;
+    position: absolute;
+    top: 2900px;
+    left: 45px;
+}
+.btn5{
+    text-align: center;
+            width: 250px;
+            height: 40px;
+            /* margin: -38px 691px; */
+    padding: 3px;
+    position: absolute;
+    top: 2970px;
+    /* display:inline-block; */
+            left: 45px;
+            border: 3px solid rgb(240, 92, 7);
+            border-radius: 5px;
+            background-color: rgb(246, 77, 4);
+            color: rgb(241, 238, 236);
+            font-size: 15px;
+}
+.btn5:hover{
+    cursor: pointer;
+    font-size: 16px;
+    /* box-shadow: 5px 5px rgb(228, 98, 50); */
+} 
+.btn5:active{
+    background-color: #526f53;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.s1{
+    /* border: 2px solid orangered; */
+    position: absolute;
+    top: 5650px;
+    width: 1400px;
+    height: 1000px;
+}
+.ss{
+    color: orangered;
+    position: absolute;
+    left: 240px;
+    top: 40px;
+    font-size: 25px;
+}
+.ss2{
+    position:absolute;
+    top: 140px;
+    left: 145px;
+}
+.ss3{
+    position: absolute;
+    top: 120px;
+    left: 480px;
+    color: black;
+    font-size: 25px;
+}
+.ss4{
+    position: absolute;
+    top: 180px;
+    left: 520px;
+    color:orangered;
+    font-size: 17px;
+}
+.s22{
+    position: absolute;
+    top: 185px;
+    left: 460px;
+    /* color:orangered; */
+    font-size: 17px;
+    border-radius: 20px;
+}
+.s22:hover{
+    /* transform: rotate(350deg); */
+    background-color: orangered;
+    /* box-shadow: 5px 5px rgb(228, 98, 50); */
+}
+.s21{
+    position: absolute;
+    top: 200px;
+    left: 520px;
+    color:rgb(122, 111, 107);
+    font-size: 17px;
+    width: 300px;
+}
+.ss5{
+    position: absolute;
+    top: 180px;
+    left: 960px;
+    color:orangered;
+    font-size: 17px;
+}
+.s24{
+    position: absolute;
+    top: 185px;
+    left: 900px;
+    /* color:orangered; */
+    font-size: 17px;
+    border-radius: 20px;
+}
+.s24:hover{
+    /* transform: rotate(350deg); */
+    background-color: orangered;
+}
+.s20{
+    position: absolute;
+    top: 200px;
+    left: 960px;
+    color:rgb(122, 111, 107);
+    font-size: 17px;
+    width: 300px;
+}
+.ss6{
+    position: absolute;
+    top: 350px;
+    left: 520px;
+    color:orangered;
+    font-size: 17px;
+    width: 400px;
+}
+.s25{
+    position: absolute;
+    top: 360px;
+    left: 460px;
+    /* color:orangered; */
+    font-size: 17px;
+    border-radius: 20px;
+    /* width: 200px; */
+}
+.s25:hover{
+    /* transform: rotate(350deg); */
+    background-color: orangered;
+}
+.s19{
+    position: absolute;
+    top: 395px;
+    left: 520px;
+    color:rgb(122, 111, 107);
+    font-size: 17px;
+    width: 300px;
+}
+.ss7{
+    position: absolute;
+    top: 355px;
+    left: 960px;
+    color:orangered;
+    font-size: 17px;
+    width: 400px;
+}
+.s26{
+    position: absolute;
+    top: 360px;
+    left: 900px;
+    /* color:orangered; */
+    font-size: 17px;
+    border-radius: 20px;
+    /* width: 200px; */
+}
+.s26:hover{
+    /* transform: rotate(350deg); */
+    background-color: orangered;
+}
+.s18{
+    position: absolute;
+    top: 375px;
+    left: 960px;
+    color:rgb(122, 111, 107);
+    font-size: 17px;
+    width: 300px;
+}
+.black{
+    position: absolute;
+    top: 6450px;
+    width: 1400px;
+    height: 700px;
+    border-radius: 8px;
+    background-color: #1f2727;
+}
+.blc{
+    color: white;
+    /* position: absolute;
+    top: 15px;
+    left: 345px; */
+    text-align: center;
+    font-size: 35px;
+}
+.blue{
+    top: 40px;
+    height:130px;
+    width: 500px;
+    background-color: rgb(52, 52, 135);
+    position: absolute;
+    left: 110px;
+    top: 110px;
+    border-radius: 10px;
+    
+}
+.blue:hover{
+    cursor: pointer;
+}
+.bl{
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 145px;
+
+}
+.bl:hover{
+    font-size: 21px;
+}
+.rd{
+    top: 40px;
+    height:130px;
+    width: 500px;
+    background-color: rgb(217, 52, 129);
+    position: absolute;
+    left: 710px;
+    top: 110px;
+    border-radius: 10px;
+    
+}
+.rd:hover{
+    cursor: pointer;
+}
+.red{
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+
+}
+.red:hover{
+    font-size: 21px;
+}
+.bd{
+  
+    height:130px;
+    width: 500px;
+    background-color: rgb(18, 28, 227);
+    position: absolute;
+    left: 110px;
+    top: 270px;
+    border-radius: 10px;
+}
+.bd:hover{
+    cursor: pointer;
+}
+.bed{
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    width: 260px;
+}
+.bed:hover{
+    font-size: 21px;
+}
+.gd{
+  height:130px;
+  width: 500px;
+  background-color: rgb(16, 72, 4);
+  position: absolute;
+  left: 710px;
+  top: 270px;
+  border-radius: 10px;
+}
+.gd:hover{
+    cursor: pointer;
+   
+}
+.ged{
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  top: 25px;
+  left: 95px;
+  width: 260px;
+}
+.ged:hover{
+    font-size: 21px;
+    
+}
+.bx{
+    width: 1100px;
+    height: 250px;
+    color: #08327b;
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    border-radius: 10px;
+}
+.bb{
+    color: white;
+    top: 30px;
+    width: 480px;
+    position: absolute;
+    left: 30px;
+}
+.cc{
+    color: orangered;
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    width: 480px;
+    font-size: 22px;
+    text-decoration: none;
+}
+.b1{
+    color: white;
+    position: absolute;
+    top:40px;
+    right: 50px;
+}
+.btn6{
+    text-align: center;
+            width: 350px;
+            height: 70px;
+            /* margin: -38px 691px; */
+    padding: 3px;
+    position: absolute;
+    top: 115px;
+            right: 80px;
+            border: 3px solid rgb(17, 16, 114);
+            border-radius: 5px;
+            background-color: rgb(26, 20, 122);
+            color: rgb(241, 238, 236);
+            font-size: 20px;
+}
+.btn6:hover{
+    cursor: pointer;
+    font-size: 21px;
+    box-shadow: 5px 5px rgb(7, 59, 105);
+} 
+.btn6:active{
+    background-color: rgb(7, 59, 105);
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.aa{
+    position:fixed;
+    right: 30px;
+    top: 30px;
+    /* box-shadow: 5px 5px rgb(228, 98, 50); */
+}
+.wt{
+    /* border: 2px solid greenyellow; */
+    height: 900px;
+    width: 1400px;
+    position: absolute;
+    top: 7150px;
+}
+.nn{
+    color: orangered;
+    font-size: 35px;
+    position: absolute;
+    top: 60px;
+    left: 120px;
+}
+ .n11{
+    color: black;
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    font-size: 18px;
+    padding: 3px;
+} 
+.grs1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 21px;
+    position: absolute;
+    left: 20px;
+    top: 90px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.grs{
+    /* border: 2px solid greenyellow; */
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 200px;
+    left: 170px;
+    background-color: antiquewhite;
+}
+.grs:hover{
+    /* box-shadow: 5px 5px rgb(199, 146, 127); */
+}
+.grs:active{
+    background-color:rgb(228, 219, 216) ;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.grs2{
+    position: absolute;
+    left: 20px;
+}
+.alc1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 21px;
+    position: absolute;
+    left: 22px;
+    top: 90px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.alc{
+    /* border: 2px solid greenyellow; */
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 200px;
+    left: 450px;
+    background-color: antiquewhite;
+}
+.alc:active{
+    background-color:rgb(228, 219, 216) ;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.alc2{
+    position: absolute;
+    left: 25px;
+}
+.flw1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 21px;
+    position: absolute;
+    left: 22px;
+    top: 90px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.flw{
+    /* border: 2px solid greenyellow; */
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 200px;
+    right: 485px;
+    background-color: antiquewhite;
+}
+.flw:active{
+    background-color:rgb(228, 219, 216) ;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.flw2{
+    position: absolute;
+    left: 25px;
+}
+.flw1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 21px;
+    position: absolute;
+    left: 22px;
+    top: 90px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.flw{
+    /* border: 2px solid greenyellow; */
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 200px;
+    right: 485px;
+    background-color: antiquewhite;
+}
+.flw2{
+    position: absolute;
+    left: 25px;
+}
+.fl1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 21px;
+    position: absolute;
+    left: 32px;
+    top: 90px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.fl{
+    /* border: 2px solid greenyellow; */
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 200px;
+    right: 205px;
+    background-color: antiquewhite;
+}
+.fl:active{
+    background-color:rgb(228, 219, 216) ;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.fl2{
+    position: absolute;
+    left: 25px;
+}
+.ph1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 21px;
+    position: absolute;
+    left: 18px;
+    top: 90px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.ph{
+    /* border: 2px solid greenyellow; */
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 440px;
+    left: 170px;
+    background-color: antiquewhite;
+}
+.ph:active{
+    background-color:rgb(228, 219, 216) ;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.ph2{
+    position: absolute;
+    left: 25px;
+}
+.wtr1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 21px;
+    position: absolute;
+    left: 15px;
+    top: 90px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.wtr{
+    /* border: 2px solid greenyellow; */
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 440px;
+    left: 450px;
+    background-color: antiquewhite;
+}
+.wtr:active{
+    background-color:rgb(228, 219, 216) ;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.wtr2{
+    position: absolute;
+    left: 35px;
+}
+.bkr1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 21px;
+    position: absolute;
+    left: 32px;
+    top: 90px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.bkr{
+    /* border: 2px solid greenyellow; */
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 440px;
+    right: 485px;
+    background-color: antiquewhite;
+}
+.bkr:active{
+    background-color:rgb(228, 219, 216) ;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.bkr2{
+    position: absolute;
+    left: 25px;
+}
+.mr1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 21px;
+    position: absolute;
+    left: 15px;
+    top: 90px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.mr{
+    /* border: 2px solid greenyellow; */
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 440px;
+    right: 205px;
+    background-color: antiquewhite;
+}
+.mr:active{
+    background-color:rgb(228, 219, 216) ;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.mr2{
+    position: absolute;
+    left: 25px;
+}
+.sys{
+    position: absolute;
+    top: 600px;
+    left: 250px;
+    color: rgb(117, 99, 99);
+    font-size: 25px;
+}
+.sys1{
+    position: absolute;
+    top: 650px;
+    left: 280px;
+    color: orangered;
+    font-size: 35px;
+}
+.sys3{
+    /* border: 2px solid red; */
+    width: 1400px;
+    height: 160px;
+    position: absolute;
+    top: 730px;
+    background-color: rgb(230, 87, 82);
+}
+.sy{
+    color: white;
+    position: absolute;
+    top: 2px;
+    left: 300px;
+    font-size: 25px;
+}
+.btn8{
+    text-align: center;
+            width: 300px;
+            height: 45px;
+            /* margin: -38px 691px; */
+    padding: 3px;
+    position: absolute;
+    top: 75px;
+            left: 510px;
+            border: 3px solid rgb(255, 70, 2);
+            border-radius: 5px;
+            background-color:rgb(255, 94, 0);
+            color: rgb(241, 238, 236);
+            font-size: 20px;
+}
+.btn8:hover{
+    cursor: pointer;
+    font-size: 21px;
+} 
+.btn8:active{
+    background-color:rgb(214, 137, 112) ;
+    box-shadow: 0 5px;
+    transform: translateY(4px);
+}
+.tech{
+    color: orangered;
+    position: absolute;
+    top: 900px;
+    left: 450px;
+    font-size: 33px;
+}
+.and1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 30px;
+    position: absolute;
+    left: 50px;
+    top: 140px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.and{
+    border: 2px solid rgb(194, 206, 176);
+    width: 200px;
+    height: 180px;
+    position: absolute;
+    top: 1050px;
+    left: 135px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+.and2{
+    position: absolute;
+    left: 25px;
+    width: 140px;
+}
+.gol1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 30px;
+    position: absolute;
+    left: 50px;
+    top: 140px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.gol{
+    border: 2px solid rgb(194, 206, 176);
+    width: 200px;
+    height: 180px;
+    position: absolute;
+    top: 1050px;
+    left: 425px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+.gol2{
+    position: absolute;
+    left: 25px;
+    top: 50px;
+    width: 140px;
+}
+.rec1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 30px;
+    position: absolute;
+    left: 50px;
+    top: 140px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.rec{
+    border: 2px solid rgb(194, 206, 176);
+    width: 200px;
+    height: 180px;
+    position: absolute;
+    top: 1050px;
+    right: 475px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+.rec2{
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    width: 140px;
+}
+.php1{
+    /* border: 2px solid rgb(111, 102, 102); */
+    /* width: 200px;
+    height: 100px; */
+    font-size: 30px;
+    position: absolute;
+    left: 50px;
+    top: 140px;
+    /* border-radius: 12px;text-align: center; */
+    text-align: center;
+    text-decoration: none;
+    color: orangered;
+    /* background-color: rgb(243, 220, 231); */
+}
+.php{
+    border: 2px solid rgb(194, 206, 176);
+    width: 200px;
+    height: 180px;
+    position: absolute;
+    top: 1050px;
+    right: 175px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+}
+.php2{
+    position: absolute;
+    left: 25px;
+    top: 45px;
+    width: 140px;
+}
+.pp{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 1300px;
+    width: 1400px;
+    height: 600px;
+    background-color: black;
+}
+.iim{
+    width: 10px;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+.pp1{
+ color: orangered;
+ position: absolute;
+ top: -10px;
+ left: 300px;
+ font-size: 20px;
+}
+.pp2{
+ color: orangered;
+ position: absolute;
+ top: -10px;
+ left: 550px;
+ font-size: 20px;
+ width: 150px;
+ height: 90px;
+}
+.pp3{
+ color: orangered;
+ position: absolute;
+ top: -10px;
+ left: 850px;
+ font-size: 20px;
+ width: 150px;
+ height: 90px;
+}
+.pp4{
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 300px;
+    width: 150px;
+    /* font-family: sans-serif; */
+}
+.pp5{
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 550px;
+    width: 150px;
+    /* font-family: sans-serif; */
+}
+.pp6{
+    color: white;
+    position: absolute;
+    top: 40px;
+    left: 850px;
+    width: 250px;
+    /* font-family: sans-serif; */
+}
+.pp7{
+ color: orangered;
+ position: absolute;
+ top: 130px;
+ left: 850px;
+ font-size: 20px;
+ width: 150px;
+ height: 90px;
+}
+.pn{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    color: white;
+}
+.pn1{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.pn2{
+    font-size: 20px;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    width: 1200px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <a href="#" class="aa"><img src="8.png"alt=""></a>
+    <header class="head">
+        <div class="left">
+            <div class="img">
+                <img src="logo.png" alt="">
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navigation">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">Why SpotnEat</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">ModelX</a></li>
+                <li><a href="">Our Process</a></li>
+                <button class="btn2">Get Your Free Demo</button>
+            </ul>  
+        </div>
+        <div class="hed">
+            <h3>Start your own food delivery business with UberEats clone app</h3>
+        </div>
+        <div class="new">
+            <h5>SpotnEats allows you to start a mobile-app-based food delivery business without having to invest in your own app, which can be very expensive and ridden with bugs.</h5>
+        </div>
+        <div class="container">
+            <h2 class="box">LET US MOVE FORWARD WITH YOUR BUSINESS PLAN</h2>
+            <form action="">
+                <div class="form">
+                    <input type="text" name="" placeholder=" Name">
+                </div>
+                <div class="form">
+                    <input type="text" name="" placeholder=" Email">
+                </div>
+                <div class="form">
+                    <input type="text" name="" placeholder="Country">
+                </div>
+                <div class="form">
+                    <input type="text" name="" placeholder="Phone No.">
+                </div>
+                <div class="formg">
+                    <textarea class="form-control" name="notes" id="notes_1" rows="3" placeholder="Tell us briefly about your project"></textarea>
+                </div>
+                <button class="btn1">Get Your Free Demo</button>
+            </form>
+        </div>
+        <div class="clone">
+            <div class="img1">
+                <img src="clone.png" alt="">
+            </div>
+        </div>
+        <div class="clone1">
+            <div class="img2">
+                <img src="top-mobile.png" alt="">
+            </div>
+        </div>
+        <div class="h3">
+            <h2>
+                Why it makes sense to use an UberEats clone app?
+            </h2>
+        </div>
+        <div class="h4">
+            <h4>
+                Most of such businesses are derailed because it is very difficult to build such an app from scratch. With an UberEats clone app, you can start your online food delivery business within a matter of a few days.
+            </h4>
+            <h4 class="ic">
+                Completely brandable and customizable.
+            </h4>
+        </div>
+        <div class="icon1">
+            <!-- <div class="icon"> -->
+                <img src="icon1.png" alt="">
+            </div>
+            <div class="icon2">
+                <!-- <div class="icon1"> -->
+                    <img src="icon2.png" alt="">
+                </div>
+                <h4 class="ic4">
+                    Completely prebuilt and scalable UberEats clone app.
+                </h4>
+                <div class="icon3">
+                        <img src="icon3.png" alt="">
+                    </div>
+                    <h4 class="ic5">
+                        Capable of handling massive activity simultaneously.
+                    </h4>
+                    <div class="icon4">
+                        <img src="icon4.png" alt="">
+                    </div>
+                    <h4 class="ic6">
+                        Tested on multiple businesses and has been performing flawlessly.
+                    </h4>
+                    <div class="icon5">
+                        <img src="icon5.png" alt="">
+                    </div>
+                    <h4 class="ic7">
+                        Available for both Android and iOS.
+                    </h4>
+                    <div class="icon6">
+                        <img src="icon6.png" alt="">
+                    </div>
+                    <h4 class="ic8">
+                        Completely administrable and manageable through a dedicated admin panel.
+                    </h4>
+                    <div class="icon7">
+                        <img src="icon7.png" alt="">
+                    </div>
+                    <h4 class="ic9">
+                        Can be used out of the box with little effort.
+                    </h4>
+                    <div class="icon8">
+                        <img src="icon8.png" alt="">
+                    </div>
+                    <h4 class="ic10">
+                        Full customization, deployment and maintenance support.
+                    </h4>
+                    <div class="nxt">
+                        <h2 class="nxt1">
+                            Our Work Speak Louder than Words
+                        </h2>
+                    </div>
+                    <div class="nxt2">
+                        <ul class="navigation1">
+                            <li><img src="1.png" alt=""></li>
+                            <li><img src="2.png" alt=""></li>
+                            <li><img src="3.png" alt=""></li>
+                            <li><img src="4.png" alt=""></li>
+                            <li><img src="5.png" alt=""></li>
+                        
+                        </ul>  
+                    </div>
+                    <div class="new1">
+                        <h2 class="nw">
+                            Why Choose SpotnEats - UberEats Clone Script
+                        </h2>
+                        <div class="nw2">
+                            SpotnEats has made the readymade online food delivery script to tackle the issues in new-feature inclusion as well as customization. We have a unique pace in the food delivery market and backed-up with knowledgeable and technically strong professionals, we have the ability to integrate all kinds of features in a short interval. With an efficient track record of satisfied clients across the countries, we earned a huge trust value globally. SpotnEats differs from others in the following ways:
+                            <br>
+                            <br>
+Once you have purchased the Food delivery app clone script, we will help you set it up on your server using the framework and customize it to your complete liking. The steps includes,
+<button class="btn3">Get Your Free Demo</button>                        
+</div>
+                        <div class="nw3">
+                            <h3>
+                               1. An establishment of a seamless connection via web and mobile applications.
+                                <br>
+                                <br>
+2. Clear-cut management of customer order requests with specifications like time, location, etc.
+<br>
+<br>
+3. 3-step food ordering options: check food menu, customize order and payment.
+<br>
+<br>
+4. With multi-mode payment options, payments can be simplified from a customer’s point-of-view.
+<br>
+<br>
+5. By including the dynamic order acceptance options, responsiveness is made quickly.
+<br>
+<br>
+6. With the map-guided directions, the reachability gets improved.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="n1">
+                    <h2 class="ni1">
+                        How Does Our UberEats Clone Works?
+                    </h2>
+                  <p class="n2">
+                    With the objective of the launch and manage the food delivery business within a matter of days, Our UberEats clone includes an adaptive workflow that allows the customers to place the order effortlessly. Here's how our UberEats clone app works:
+                  </p>
+                  <img src="flow.svg" alt="" class="ni2">
+                  <div class="ni3">
+                      <h1 class="hy">
+                          1.
+                      </h1>
+                    </div>
+                    <h1 class="hz">
+                      USER REGISTRATION
+                    </h1>
+                    <h3 class="hh">
+                        Initially, the customers download the app and register their presence via email, mobile numbers, and social media profiles. These actions are also extended to both restaurant owners and delivery executives to make their online presence consistent.
+                    </h3>
+                    <div class="ni4">
+                        <h1 class="hy">
+                            2.
+                        </h1>
+                      </div>
+                    <h1 class="hz1">
+                        SEARCH FAV MENU OR RESTAURANT
+                      </h1>
+                      <h3 class="hh1">
+                        After the registration process, customers can easily search the restaurants as per their familiarity and the food quality. Then, the customer searches their menus, adds their items to the cart.
+                    </h3>
+                    <div class="ni5">
+                        <h1 class="hy">
+                            3.
+                        </h1>
+                      </div>
+                    <h1 class="hz2">
+                        PLACE ORDER
+                      </h1>
+                      <h3 class="hh2">   
+                    After the deep analysis of the restaurants and the food available, the customers can place the food orders instantly.
+                    </h3>
+                    <div class="ni6">
+                        <h1 class="hy">
+                            4.
+                        </h1>
+                      </div>
+                    <h1 class="hz3">
+                        INSTANT FOOD ORDER PICKUP
+                      </h1>
+                      <h3 class="hh3">   
+                        They either accept or reject the pickup requests based on their active state. Also, they send periodic notifications to the customers regarding the trip of orders consistently.
+                    </h3>
+                    <div class="ni7">
+                        <h1 class="hy">
+                            5.
+                        </h1>
+                      </div>
+                    <h1 class="hz4">
+                        TRACK YOUR ORDER IN REAL-TIME
+                      </h1>
+                      <h3 class="hh4">   
+                        With the built-in feature called GPS and map-based navigation, the customers can easily track the food orders till they arrive.
+                    </h3>
+                    <div class="ni8">
+                        <h1 class="hy">
+                            6.
+                        </h1>
+                      </div>
+                    <h1 class="hz5">
+                        GET YOUR ORDER AT DOORSTEP
+                      </h1>
+                      <h3 class="hh5">   
+                        Delivery executives finally delivered the ordered meals to your doorstep. If you select the COD option in payment mode selection, then you can hand over the cash to the delivery executives directly.
+                    </h3>
+                    <button class="btn4">Get Your Free Demo</button> 
+                <h2 class="hk1">
+                    What is unique and awesome about the SpotnEats UberEats clone app?
+                </h2>    
+                <h2 class="hk2">
+                  1.  No technical knowledge needed.
+                  <br>
+2. Works out-of-the-box so you can try it out immediately.
+<br>
+3. International standards in customization and branding.
+<br>
+4. Very affordable.
+<br>
+5. Works on multiple mobile operating systems and leverages native OS capabilities.
+<br>
+6. Manage multiple aspects of your food delivery business on the fly.
+<br>
+7. Multiple payment solutions including digital wallet and cryptocoins.
+<br>
+8. Different admin dashboards for different sections including delivery vehicles, users and the main admin.
+<br>
+9. Detailed reporting and order/delivery history.
+                </h2>
+                <img src="n2.png" alt="" class="hk3">
+                <h2 class="hk4">
+                    Get a first-hand experience.
+                </h2>
+                <button class="btn5">Get Your Free Demo</button>
+                </div>
+                <div class="s1">
+                    <h2 class="ss">
+                        360-DEGREE FEATURES IN THIS POWER-PACKED UBEREATS CLONE APP
+
+                    </h2>
+                    <img src="fetch1.png" alt="" class="ss2">
+                    <h3 class="ss3">
+                        FOR CUSTOMERS
+                    </h3>
+                    <img src="1 (1).png" alt="" class="s22">
+                    <h3 class="ss4">
+                        SIMPLE, INTUITIVE USER EXPERIENCE
+                    </h3>
+                    <h4 class="s21">
+                        Very important for quick user acquisition. Very easy, very simple to use. Registration just with the mobile phone or an email.
+                    </h4>
+                    <img src="2.1.png" alt="" class="s24">
+                    <h3 class="ss5">
+                        INSTANT NOTIFICATIONS
+                    </h3>
+                    <h4 class="s20">
+                        Users can be instantly notified of the placement of their orders, the orders being picked, the place where the order is right now, and the arrival at the destination.
+                    </h4>
+                    <img src="3.1.png" alt="" class="s25">
+                    <h3 class="ss6">
+                        FAVORATING FOOD ITEMS, RESTAURANTS AND ORDERS
+                    </h3>
+                    <h4 class="s19">
+                        Make it possible for users to order their favorite food items instantly by enabling them to “favorite” their actions and choices.
+                    </h4>
+                    <img src="4.1.png" alt="" class="s26">
+                    <h3 class="ss7">
+                        SEAMLESS BROWSING
+                    </h3>
+                    <h4 class="s18">
+                        Multiple and interactive ways of browsing for food items and restaurants.
+                    </h4>
+                </div>
+                    <div class="black">
+                        <h2 class="blc">
+                            Add-on features (on customer request)
+                        </h2>
+                        <div class="blue">
+                            <h2 class="bl">
+                                Crypto Payments
+                            </h2>
+                        </div>
+                        <div class="rd">
+                            <h2 class="red">
+                                One-time fixed payment model. No monthly subscription model
+                            </h2>
+                        </div>
+                        <div class="bd">
+                            <h2 class="bed">
+                                Payment Gateway and Chat Integration
+                            </h2>
+                        </div>
+                        <div class="gd">
+                            <h2 class="ged">
+                                Any on demand features requested by you
+                            </h2>
+                        </div>
+                        <div class="bx">
+                            <h2 class="bb">
+                                Worried about someone stealing your unique business plan?.
+                            </h2>
+                            <a href="#" class="cc">Sign a rock-solid Non-disclosure agreement before sharing your business model with us.</a>
+                            <h2 class="b1">
+                                Are you ready to kickstart the project?
+                            </h2>
+                            <button class="btn6">Get Your Free Demo</button>   
+                        </div>
+                    </div>
+                    <div class="wt">
+                        <h3 class="nn">
+                            Our UberEats Clone Scripts for various business models is at your Perusal!
+                        </h3>
+                        <h3 class="n11">
+                            Aside from running a food delivery business, SpotnEats can be easily customized and tweaked to serve the following business models:
+                        </h3>
+                        <div class="grs">
+                            <img src="delivery.png" alt="" class="grs2">
+                            <a href="" class="grs1">Grocery Delivery</a>
+                        </div>
+                        <div class="alc">
+                            <img src="alcohol.png" alt="" class="alc2">
+                            <a href="" class="alc1">Alcohol Delivery</a>
+                        </div>
+                        <div class="flw">
+                            <img src="flower_delivery.png" alt="" class="flw2">
+                            <a href="" class="flw1">Flower Delivery</a>
+                        </div>
+                        <div class="fl">
+                            <img src="fuel.png" alt="" class="fl2">
+                            <a href="" class="fl1">Fuel Delivery</a>
+                        </div>
+                        <div class="ph">
+                            <img src="phrma.png" alt="" class="ph2">
+                            <a href="" class="ph1">Pharmacy Delivery</a>
+                        </div>
+                        <div class="wtr">
+                            <img src="water_delivery.png" alt="" class="wtr2">
+                            <a href="" class="wtr1">Water Bottle Delivery</a>
+                        </div>
+                        <div class="bkr">
+                            <img src="bakery_delivery.png" alt="" class="bkr2">
+                            <a href="" class="bkr1">Bakery Delivery</a>
+                        </div>
+                        <div class="mr">
+                            <img src="medical_delivery.png" alt="" class="mr2">
+                            <a href="" class="mr1">Marijuana Delivery</a>
+                        </div>
+                        <h3 class="sys">
+                            and basically, every service that needs a booking and delivery system.
+                        </h3>
+                        <h2 class="sys1">
+                            Custom features & add-ons that you can have
+                        </h2>
+                        <div class="sys3">
+                            <h3 class="sy">
+                                Have a glimpse into our powerful UberEats clone app script.
+                            </h3>
+                            <button class="btn8">Get Your Free Demo</button>
+                        </div>
+                        <hr>
+                        <h3 class="tech">
+                            Technologies used in our product
+                        </h3>
+                        <div class="and">
+                            <img src="android.jpg" alt="" class="and2">
+                            <!-- <a href="" class="and1">Android</a> -->
+                        </div>
+                        <div class="gol">
+                            <img src="golang.png" alt="" class="gol2">
+                            <!-- <a href="" class="gol1">Golang</a> -->
+                        </div>
+                        <div class="rec">
+                            <img src="react.png" alt="" class="rec2">
+                            <!-- <a href="" class="rec1">ReactJS</a> -->
+                        </div>
+                        <div class="php">
+                            <img src="php.png" alt="" class="php2">
+                            <!-- <a href="" class="php1">Php</a> -->
+                        </div>
+                        <div class="pp">
+                            <div class="iim">
+                                <img src="logo.png" alt="">
+                                <h3 class="pp1">
+                                    PRODUCTS
+                                </h3>
+                                <h3 class="pp2">
+                                    CLONE SCRIPTS
+                                </h3>
+                                <h3 class="pp3">
+                                    OTHER LINKS
+                                </h3>
+                                <h3 class="pn">
+                                  <a href="nishanktyagimzn@gmail.com" class="pn1">Email</a>
+                                   <br>
+                                 Whatsapp:
+                                 <br>+91 9536600039
+                                 <br>
+                                <!-- Linkedin:
+                                <br> https://www.linkedin.com/in/nishank-tyagi-3a2173228 -->
+                                </h3>
+                                <h3 class="pp4">
+                                    Food Delivery Software
+Grocery Delivery Software
+Alcohol Delivery App
+Fuel Delivery App
+Flower Delivery App
+                                </h3>
+                                <h3 class="pp5">
+                                    Grubhub Clone
+FoodPanda Clone
+DoorDash Clone
+JustEat Clone
+Uber Clone
+
+                                </h3>
+                                <h3 class="pp6">
+                                    Privacy Policy
+                                    <br>
+Terms & Conditions
+<br>
+Blog
+                                </h3>
+                                <h3 class="pp7">
+                                    FOLLOW US ON
+                                </h3>
+                            </div>
+                            <h2 class="pn2">
+                                Copyright © 2017 - 2022 Powered by Uplogic Technologies PVT LTD All Rights Reserved.
+                            <hr> <br>
+                                <br>
+
+We have used the term “UberEats”, "Food panda", etc. to explain the workflow of on-demand delivery in detail. As an Independent app-development player in the market, We are in no way a part of UberEats Inc. or connected to them in any way. Our intention is just to illustrate our way of providing the delivery services with the above terms and we wish to disrepute any delivery-services company anywhere.
+
+Trademark Legal Notice: The product name called SpotnEats trademarks and registered trademarks are the property of their respective owners. All product and service names used in the SpotnEats website are for identification purposes only. The use of SpotnEats trademarks and brands does not imply endorsement.
+                            </h2>
+                        </div>
+                    </div>
+
+                </header>
+
+            </body>
+</html>
